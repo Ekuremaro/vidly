@@ -1,0 +1,25 @@
+@model IEnumerable<Vidly.Models.Customer>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>customers</title>
+</head>
+<body>
+<div>
+    @foreach(var customer in Model)
+        {
+            <h1>@customer.Name</h1>
+        }
+    
+    
+    
+ 
+</div>
+</body>
+</html>
